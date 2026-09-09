@@ -4,7 +4,7 @@
    finas, assimetria deliberada, grão sutil, quase nenhum "card".
    Paleta extraída da identidade real: terracota/marsala do
    wordmark BREA + branco quente (mármore) + rosé.
-   Tipografia: Fraunces (display, com itálico real) + Instrument Sans.
+   Tipografia: Italiana (marca) + Cormorant (display) + Montserrat.
    ============================================================ */
 
 :root {
@@ -22,9 +22,10 @@
   --line-dark: #7F4B41;
   --paper: #FDFBF8;
 
-  /* Tipografia */
-  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
-  --font-body: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  /* Tipografia (alinhada à identidade: wordmark hairline + serifa clássica + sans do selo) */
+  --font-display: "Cormorant", Georgia, "Times New Roman", serif;
+  --font-logo: "Italiana", "Cormorant", Georgia, serif;
+  --font-body: "Montserrat", "Helvetica Neue", Arial, sans-serif;
 
   /* Movimento */
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
@@ -72,8 +73,8 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-body);
-  font-size: 1.0625rem;
-  line-height: 1.65;
+  font-size: 0.985rem;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   overflow-x: clip;
@@ -90,15 +91,15 @@ a {
 
 h1, h2, h3 {
   font-family: var(--font-display);
-  font-weight: 470;
+  font-weight: 500;
   line-height: 1.04;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
   text-wrap: balance;
 }
 
 h1 em, h2 em, .statement em {
   font-style: italic;
-  font-weight: 430;
+  font-weight: 500;
   color: var(--terra);
 }
 
@@ -154,7 +155,7 @@ p {
 .folio .folio-num {
   font-family: var(--font-display);
   font-style: italic;
-  font-weight: 430;
+  font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: none;
   font-size: 0.95rem;
@@ -175,7 +176,7 @@ p {
 
 /* ---------- Tipos ---------- */
 .t-display {
-  font-size: clamp(3rem, 9.5vw, 8.5rem);
+  font-size: clamp(3.2rem, 10vw, 9rem);
   line-height: 0.98;
 }
 .t-1 {
@@ -313,8 +314,8 @@ p {
 .brand {
   display: inline-grid;
   gap: 0.25rem;
-  font-family: var(--font-display);
-  font-size: 1.45rem;
+  font-family: var(--font-logo);
+  font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -428,7 +429,7 @@ p {
   .site-nav a:not(.btn) {
     font-family: var(--font-display);
     font-size: 2rem;
-    font-weight: 470;
+    font-weight: 500;
     letter-spacing: -0.01em;
     text-transform: none;
     color: var(--ink);
@@ -578,7 +579,7 @@ p {
 /* ---------- Declaração editorial ---------- */
 .statement {
   font-family: var(--font-display);
-  font-weight: 450;
+  font-weight: 500;
   font-size: clamp(1.6rem, 3.6vw, 3rem);
   line-height: 1.22;
   letter-spacing: -0.015em;
@@ -620,7 +621,7 @@ p {
 }
 .treatment-name {
   font-family: var(--font-display);
-  font-weight: 470;
+  font-weight: 500;
   font-size: clamp(1.7rem, 3.6vw, 3.2rem);
   line-height: 1;
   letter-spacing: -0.02em;
@@ -628,7 +629,7 @@ p {
 }
 .treatment-row a:hover .treatment-name {
   font-style: italic;
-  font-weight: 430;
+  font-weight: 500;
   color: var(--terra);
 }
 .treatment-desc {
@@ -688,7 +689,7 @@ p {
   content: counter(step, decimal-leading-zero);
   font-family: var(--font-display);
   font-style: italic;
-  font-weight: 430;
+  font-weight: 500;
   font-size: clamp(2.6rem, 5vw, 4.5rem);
   line-height: 0.9;
   color: var(--terra-soft);
@@ -836,7 +837,7 @@ p {
   gap: 1rem;
   padding-block: 1.5rem;
   font-family: var(--font-display);
-  font-weight: 470;
+  font-weight: 500;
   font-size: clamp(1.1rem, 1.8vw, 1.4rem);
   cursor: pointer;
   list-style: none;
@@ -1027,7 +1028,7 @@ p {
   z-index: 1;
 }
 .footer-mark {
-  font-family: var(--font-display);
+  font-family: var(--font-logo);
   font-weight: 400;
   font-size: clamp(4.5rem, 16vw, 14rem);
   line-height: 0.85;
