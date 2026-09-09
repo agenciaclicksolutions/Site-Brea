@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato — Clínica Brea</title>
+  <meta name="description" content="Agende sua avaliação na Clínica Brea pelo WhatsApp ou envie uma mensagem pelo formulário. Endereço, horários e redes sociais.">
+  <link rel="canonical" href="https://www.clinicabrea.com.br/contato.html"><!-- TODO: confirmar domínio definitivo -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contato — Clínica Brea">
+  <meta property="og:description" content="Agende sua avaliação pelo WhatsApp ou envie uma mensagem.">
+  <meta property="og:url" content="https://www.clinicabrea.com.br/contato.html">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">Clínica <span>Brea</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="menu" aria-label="Navegação principal">
+        <a href="/">Início</a>
+        <a href="/tratamentos.html">Tratamentos</a>
+        <a href="/sobre.html">A clínica</a>
+        <a href="/contato.html" aria-current="page">Contato</a>
+        <a class="btn btn-primary" href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <section class="hero" style="padding-bottom: 0;">
+      <div class="container">
+        <div class="section-head" data-stagger>
+          <p class="kicker reveal">Contato</p>
+          <h1 class="h-display reveal">Vamos conversar?</h1>
+          <p class="lead reveal">O caminho mais rápido é o WhatsApp — é por lá que agendamos as avaliações. Se preferir, deixe sua mensagem no formulário e retornamos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div data-stagger>
+          <a class="btn btn-primary reveal" href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" style="margin-bottom: 2rem;">Agendar pelo WhatsApp <span class="btn-arrow" aria-hidden="true">→</span></a>
+          <ul class="contact-list reveal">
+            <li>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/5500000000000" target="_blank" rel="noopener">[Número com DDD — preencher]</a>
+            </li>
+            <li>
+              <strong>Instagram</strong>
+              <a href="https://www.instagram.com/clinicabrea/" target="_blank" rel="noopener">@clinicabrea</a>
+            </li>
+            <li>
+              <strong>Endereço</strong>
+              <span>[Rua, número, bairro, cidade — preencher]</span>
+            </li>
+            <li>
+              <strong>Horário de atendimento</strong>
+              <span>[Dias e horários — preencher]</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="reveal">
+          <!-- TODO: conectar o formulário a um serviço de envio (Formspree, Web3Forms,
+               ou endpoint próprio). Sem "action" configurado, ele não envia. -->
+          <form class="form-grid" action="#" method="post">
+            <div class="field">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="whatsapp">WhatsApp</label>
+              <input type="tel" id="whatsapp" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="(00) 00000-0000" required>
+            </div>
+            <div class="field">
+              <label for="interesse">O que você procura?</label>
+              <select id="interesse" name="interesse">
+                <option value="">Prefiro contar na conversa</option>
+                <option value="facial">Estética facial</option>
+                <option value="corporal">Estética corporal</option>
+                <option value="pele">Saúde da pele</option>
+                <option value="outro">Outro assunto</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Conte brevemente o que você gostaria de tratar ou perguntar."></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar mensagem <span class="btn-arrow" aria-hidden="true">→</span></button>
+            <p class="form-note">Seus dados são usados apenas para responder ao seu contato, conforme a LGPD.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAPA -->
+    <section class="section-tight">
+      <div class="container">
+        <div class="ph reveal" style="aspect-ratio: 21 / 8;">
+          <em>Mapa da localização (Google Maps embed) — adicionar quando o endereço for definido</em>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/">Clínica <span>Brea</span></a>
+          <p>Estética com avaliação individual, protocolos personalizados e acompanhamento próximo.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="/">Início</a></li>
+            <li><a href="/tratamentos.html">Tratamentos</a></li>
+            <li><a href="/sobre.html">A clínica</a></li>
+            <li><a href="/contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="https://wa.me/5500000000000" target="_blank" rel="noopener">WhatsApp<!-- TODO: número real --></a></li>
+            <li><a href="https://www.instagram.com/clinicabrea/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><span>[Endereço da clínica — preencher]</span></li>
+            <li><span>[Horário de atendimento — preencher]</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <span>© 2026 Clínica Brea. Todos os direitos reservados.</span>
+        <span>[CNPJ e responsável técnico — preencher]</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

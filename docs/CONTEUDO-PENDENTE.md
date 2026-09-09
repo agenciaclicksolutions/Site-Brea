@@ -1,0 +1,43 @@
+# Conteúdo pendente antes da publicação
+
+Checklist de tudo que está como placeholder e precisa do dado real.
+Nada nesta lista foi inventado — o site não deve ir ao ar antes de resolver os itens marcados como **bloqueante**.
+
+## Bloqueantes
+
+- [ ] **Número do WhatsApp** — substituir `5500000000000` em TODOS os links `wa.me`
+      (buscar por `5500000000000` no projeto; aparece em todas as páginas).
+- [ ] **Domínio definitivo** — o projeto assume `https://www.clinicabrea.com.br/`.
+      Ajustar em: `<link rel="canonical">` e metas OG de cada página, `sitemap.xml`, `robots.txt`, JSON-LD do `index.html`.
+- [ ] **Endereço e horário de atendimento** — footer de todas as páginas + `contato.html`.
+- [ ] **História da clínica e profissionais responsáveis** — bloco "Nossa história" em `sobre.html`.
+- [ ] **Portfólio real de tratamentos** — nomes, descrições e listas de procedimentos
+      em `tratamentos.html` e na lista da home (marcados com `TODO` no HTML).
+- [ ] **Envio do formulário** — `contato.html` precisa de um `action` real
+      (Formspree, Web3Forms ou endpoint próprio).
+- [ ] **CNPJ e responsável técnico** — footer de todas as páginas.
+
+## Fotografias (substituir os placeholders `.ph`)
+
+- [ ] Hero da home: foto principal (clínica ou profissional), proporção 4:5.
+- [ ] Home, seção "A clínica": foto do espaço, 4:5.
+- [ ] Sobre: foto ampla do espaço (16:11) e retrato da(s) profissional(is) (4:5).
+- [ ] Tratamentos: uma foto por frente (facial, corporal, pele), 4:5.
+- [ ] Open Graph: imagem 1200×630 para compartilhamento (todas as páginas).
+- [ ] Contato: embed do Google Maps quando o endereço for definido.
+
+Recomendação: fotos reais da clínica com tratamento consistente (luz quente,
+tons alinhados à paleta). Exportar em WebP/AVIF, `loading="lazy"` fora da
+primeira dobra, `width`/`height` declarados e `alt` descritivo.
+
+## Quando existirem (não inventar antes)
+
+- [ ] Depoimentos reais com autorização por escrito → reativar a seção
+      documentada em comentário no `index.html`.
+- [ ] Certificações/formação da equipe → adicionar em `sobre.html`.
+- [ ] Política de privacidade (LGPD) → criar página e linkar no footer e no formulário.
+
+## Calibração com a identidade real do Instagram
+
+Ver `docs/ESTRATEGIA.md`, seção 6. Paleta e tipografia trocam-se nos tokens
+no topo de `assets/css/styles.css`.
