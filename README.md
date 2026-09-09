@@ -1,4 +1,4 @@
-# Site — Clínica Brea
+# Site — BREA · Bruna Ramos Estética Avançada
 
 Site institucional estático, orientado à conversão via WhatsApp.
 
@@ -34,6 +34,6 @@ domínio, endereço, portfólio real de tratamentos, envio do formulário).
 
 ## Identidade visual
 
-Toda a paleta e tipografia estão em variáveis CSS no topo de
-`assets/css/styles.css`. Para calibrar com a identidade real do Instagram
-(@clinicabrea), basta trocar os tokens — ver `docs/ESTRATEGIA.md`, seção 6.
+Paleta extraída da identidade real (wordmark terracota/marsala, base branca,
+rosé). Toda a paleta e tipografia estão em variáveis CSS no topo de
+`assets/css/styles.css` — ver `docs/ESTRATEGIA.md`.

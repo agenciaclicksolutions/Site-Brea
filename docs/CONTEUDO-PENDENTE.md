@@ -10,7 +10,7 @@ Nada nesta lista foi inventado — o site não deve ir ao ar antes de resolver o
 - [ ] **Domínio definitivo** — o projeto assume `https://www.clinicabrea.com.br/`.
       Ajustar em: `<link rel="canonical">` e metas OG de cada página, `sitemap.xml`, `robots.txt`, JSON-LD do `index.html`.
 - [ ] **Endereço e horário de atendimento** — footer de todas as páginas + `contato.html`.
-- [ ] **História da clínica e profissionais responsáveis** — bloco "Nossa história" em `sobre.html`.
+- [ ] **Trajetória de Bruna Ramos** (formação, especializações, registro profissional) — bloco "Nossa história" em `sobre.html`.
 - [ ] **Portfólio real de tratamentos** — nomes, descrições e listas de procedimentos
       em `tratamentos.html` e na lista da home (marcados com `TODO` no HTML).
 - [ ] **Envio do formulário** — `contato.html` precisa de um `action` real
@@ -22,13 +22,22 @@ Nada nesta lista foi inventado — o site não deve ir ao ar antes de resolver o
 - [ ] Hero da home: foto principal (clínica ou profissional), proporção 4:5.
 - [ ] Home, seção "A clínica": foto do espaço, 4:5.
 - [ ] Sobre: foto ampla do espaço (16:11) e retrato da(s) profissional(is) (4:5).
-- [ ] Tratamentos: uma foto por frente (facial, corporal, pele), 4:5.
+- [ ] Tratamentos: uma foto por frente (harmonização, corporal, tecnologias), 4:5.
 - [ ] Open Graph: imagem 1200×630 para compartilhamento (todas as páginas).
 - [ ] Contato: embed do Google Maps quando o endereço for definido.
 
-Recomendação: fotos reais da clínica com tratamento consistente (luz quente,
-tons alinhados à paleta). Exportar em WebP/AVIF, `loading="lazy"` fora da
+Recomendação: fotos reais da clínica com tratamento consistente (luz clara,
+mármore/tons neutros da identidade). Exportar em WebP/AVIF, `loading="lazy"` fora da
 primeira dobra, `width`/`height` declarados e `alt` descritivo.
+
+## Identidade e redes
+
+- [ ] **Logo vetorial oficial** (wordmark BREA + selo circular) — substituir o
+      wordmark tipográfico do header/footer e o `favicon.svg` provisório.
+- [ ] **Cidade** — aparece no hero da home e em `sobre.html` (`[Cidade — preencher]`).
+- [ ] **Links de TikTok e Facebook** (existem no bio.site) — adicionar ao footer.
+- [ ] Conferir os tons exatos da paleta contra o manual da marca, se existir
+      (tokens no topo de `assets/css/styles.css`).
 
 ## Quando existirem (não inventar antes)
 
@@ -36,8 +45,3 @@ primeira dobra, `width`/`height` declarados e `alt` descritivo.
       documentada em comentário no `index.html`.
 - [ ] Certificações/formação da equipe → adicionar em `sobre.html`.
 - [ ] Política de privacidade (LGPD) → criar página e linkar no footer e no formulário.
-
-## Calibração com a identidade real do Instagram
-
-Ver `docs/ESTRATEGIA.md`, seção 6. Paleta e tipografia trocam-se nos tokens
-no topo de `assets/css/styles.css`.
