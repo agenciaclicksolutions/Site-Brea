@@ -45,8 +45,48 @@
     });
   }
 
-  /* Reveal on scroll, com stagger por grupo */
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* Luz que segue o cursor (só em ponteiro fino, sem reduced motion) */
+  var glow = document.querySelector(".cursor-glow");
+  var finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  if (glow && finePointer && !reduceMotion) {
+    var gx = window.innerWidth / 2;
+    var gy = window.innerHeight / 2;
+    var targetX = gx;
+    var targetY = gy;
+    var rafId = null;
+
+    var tick = function () {
+      gx += (targetX - gx) * 0.07;
+      gy += (targetY - gy) * 0.07;
+      glow.style.transform = "translate(" + gx + "px, " + gy + "px)";
+      if (Math.abs(targetX - gx) + Math.abs(targetY - gy) > 0.3) {
+        rafId = requestAnimationFrame(tick);
+      } else {
+        rafId = null;
+      }
+    };
+
+    window.addEventListener(
+      "mousemove",
+      function (event) {
+        targetX = event.clientX;
+        targetY = event.clientY;
+        glow.classList.add("is-active");
+        if (rafId === null) {
+          rafId = requestAnimationFrame(tick);
+        }
+      },
+      { passive: true }
+    );
+
+    document.documentElement.addEventListener("mouseleave", function () {
+      glow.classList.remove("is-active");
+    });
+  }
+
+  /* Reveal on scroll, com stagger por grupo */
   var revealed = document.querySelectorAll(".reveal");
 
   if (reduceMotion || !("IntersectionObserver" in window)) {

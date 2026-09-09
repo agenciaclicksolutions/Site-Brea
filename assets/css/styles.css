@@ -1094,6 +1094,39 @@ p {
   }
 }
 
+/* ---------- Luz que segue o cursor ---------- */
+/* Camada única composta por transform; soft-light interage com
+   fundos claros e escuros sem comprometer a leitura. */
+.cursor-glow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 72vmax;
+  height: 72vmax;
+  margin: -36vmax 0 0 -36vmax;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(156, 84, 75, 0.65) 0%,
+    rgba(211, 166, 155, 0.25) 38%,
+    transparent 66%
+  );
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+  will-change: transform;
+}
+.cursor-glow.is-active {
+  opacity: 1;
+}
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .cursor-glow {
+    display: none;
+  }
+}
+
 /* ---------- Reveal on scroll ---------- */
 .reveal {
   opacity: 0;
