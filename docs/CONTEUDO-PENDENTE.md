@@ -9,7 +9,7 @@ Nada nesta lista foi inventado — o site não deve ir ao ar antes de resolver o
       (buscar por `5500000000000` no projeto; aparece em todas as páginas).
 - [ ] **Domínio definitivo** — o projeto assume `https://www.clinicabrea.com.br/`.
       Ajustar em: `<link rel="canonical">` e metas OG de cada página, `sitemap.xml`, `robots.txt`, JSON-LD do `index.html`.
-- [ ] **Endereço e horário de atendimento** — footer de todas as páginas + `contato.html`.
+- [ ] **Endereço completo e horário de atendimento** — cidade confirmada (São Paulo — SP) e aplicada; faltam rua/número/bairro e horários.
 - [ ] **Trajetória de Bruna Ramos** (formação, especializações, registro profissional) — bloco "Nossa história" em `sobre.html`.
 - [ ] **Portfólio real de tratamentos** — nomes, descrições e listas de procedimentos
       em `tratamentos.html` e na lista da home (marcados com `TODO` no HTML).
@@ -41,7 +41,6 @@ primeira dobra, `width`/`height` declarados e `alt` descritivo.
 - [x] Logo aplicado (header, footer e favicon) a partir dos PNGs recebidos.
       Quando existir o **vetor (SVG/AI)**, substituir `logo-horizontal*.png` e
       `selo.png` para nitidez perfeita em qualquer tamanho.
-- [ ] **Cidade** — aparece no hero da home e em `sobre.html` (`[Cidade — preencher]`).
 - [ ] **Links de TikTok e Facebook** (existem no bio.site) — adicionar ao footer.
 - [ ] Conferir os tons exatos da paleta contra o manual da marca, se existir
       (tokens no topo de `assets/css/styles.css`).
@@ -59,5 +58,4 @@ primeira dobra, `width`/`height` declarados e `alt` descritivo.
   subiu junto com as fotos por engano e foi removido do projeto. Ele ainda
   existe no histórico do git (commit `3268c6f`); se quiser eliminá-lo do
   histórico também, pedir a limpeza antes de tornar o repositório público.
-- Possível cidade da clínica: Uberlândia – MG (inferida de documento interno).
-  **Confirmar antes de preencher** no hero e no rodapé.
+- Cidade confirmada pelo cliente: São Paulo — SP (aplicada em 2026-09-10).
