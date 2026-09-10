@@ -19,12 +19,18 @@ Nada nesta lista foi inventado — o site não deve ir ao ar antes de resolver o
 
 ## Fotografias (substituir os placeholders `.ph`)
 
+> **Como enviar:** ver `assets/img/README.md` — nomes de arquivo definidos e
+> instruções de upload (GitHub → `assets/img/` na branch de trabalho).
+
 - [ ] Hero da home: foto principal (clínica ou profissional), proporção 4:5.
 - [ ] Home, seção "A clínica": foto do espaço, 4:5.
 - [ ] Sobre: foto ampla do espaço (16:11) e retrato da(s) profissional(is) (4:5).
 - [ ] Tratamentos: uma foto por frente (harmonização, corporal, tecnologias), 4:5.
 - [ ] Open Graph: imagem 1200×630 para compartilhamento (todas as páginas).
 - [ ] Contato: embed do Google Maps quando o endereço for definido.
+- [ ] Resultados (Home): antes/depois de Botox e Preenchimento labial — recortar
+      dos posts sem a moldura do template e **confirmar autorização por escrito
+      das pacientes para uso no site**.
 
 Recomendação: fotos reais da clínica com tratamento consistente (luz clara,
 mármore/tons neutros da identidade). Exportar em WebP/AVIF, `loading="lazy"` fora da
