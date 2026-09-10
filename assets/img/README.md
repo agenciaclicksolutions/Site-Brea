@@ -8,18 +8,18 @@ esperado ou comentários `substituir`).
 Formato recomendado: WebP (ou JPG), qualidade ~80. `loading="lazy"` em tudo
 que estiver fora da primeira dobra; declarar `width`/`height`.
 
-## Identidade (recebidas da cliente — reenviar como arquivo)
+## Identidade — RECEBIDAS e aplicadas (originais em `src/`)
 
 | Arquivo | Uso | Especificação |
 |---|---|---|
-| `logo-horizontal.svg` (ou .png 2x) | Header e footer (substitui o lockup tipográfico) | Wordmark BREA + "Bruna Ramos / Estética Avançada" |
-| `logo-selo.svg` (ou .png 2x) | Favicon definitivo, OG image, detalhes | Selo circular |
+| `logo-horizontal.png` / `logo-horizontal-cream.png` | Header / footer (aplicados) | Trocar por SVG quando houver vetor |
+| `selo.png` | Favicon (aplicado) | Trocar por vetor quando houver |
 
 ## Conteúdo
 
 | Arquivo | Uso | Proporção |
 |---|---|---|
-| `home-hero.webp` | Home, imagem principal do hero (ex.: flat-lay mármore com produtos) | 16:10, ≥1600px |
+| `home-hero.webp` | RECEBIDA e aplicada (flat-lay). Para máxima nitidez, enviar versão ≥1600px | 16:10 |
 | `home-espaco.webp` | Home, seção "A clínica" | 4:3, ≥1200px |
 | `sobre-espaco-amplo.webp` | Sobre, faixa larga do espaço | 21:9, ≥1800px |
 | `sobre-bruna.webp` | Sobre, retrato de Bruna Ramos | 4:3, ≥1200px |

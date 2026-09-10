@@ -22,15 +22,15 @@ Nada nesta lista foi inventado — o site não deve ir ao ar antes de resolver o
 > **Como enviar:** ver `assets/img/README.md` — nomes de arquivo definidos e
 > instruções de upload (GitHub → `assets/img/` na branch de trabalho).
 
-- [ ] Hero da home: foto principal (clínica ou profissional), proporção 4:5.
+- [x] Hero da home — `home-hero.webp` (flat-lay recebido; substituível por foto profissional depois).
 - [ ] Home, seção "A clínica": foto do espaço, 4:5.
 - [ ] Sobre: foto ampla do espaço (16:11) e retrato da(s) profissional(is) (4:5).
 - [ ] Tratamentos: uma foto por frente (harmonização, corporal, tecnologias), 4:5.
 - [ ] Open Graph: imagem 1200×630 para compartilhamento (todas as páginas).
 - [ ] Contato: embed do Google Maps quando o endereço for definido.
-- [ ] Resultados (Home): antes/depois de Botox e Preenchimento labial — recortar
-      dos posts sem a moldura do template e **confirmar autorização por escrito
-      das pacientes para uso no site**.
+- [x] Resultados (Home): antes/depois de Botox e Preenchimento labial — recortados
+      e publicados. **Pendente: confirmar autorização por escrito das pacientes
+      para uso no site.**
 
 Recomendação: fotos reais da clínica com tratamento consistente (luz clara,
 mármore/tons neutros da identidade). Exportar em WebP/AVIF, `loading="lazy"` fora da
@@ -38,8 +38,9 @@ primeira dobra, `width`/`height` declarados e `alt` descritivo.
 
 ## Identidade e redes
 
-- [ ] **Logo vetorial oficial** (wordmark BREA + selo circular) — substituir o
-      wordmark tipográfico do header/footer e o `favicon.svg` provisório.
+- [x] Logo aplicado (header, footer e favicon) a partir dos PNGs recebidos.
+      Quando existir o **vetor (SVG/AI)**, substituir `logo-horizontal*.png` e
+      `selo.png` para nitidez perfeita em qualquer tamanho.
 - [ ] **Cidade** — aparece no hero da home e em `sobre.html` (`[Cidade — preencher]`).
 - [ ] **Links de TikTok e Facebook** (existem no bio.site) — adicionar ao footer.
 - [ ] Conferir os tons exatos da paleta contra o manual da marca, se existir
@@ -51,3 +52,12 @@ primeira dobra, `width`/`height` declarados e `alt` descritivo.
       documentada em comentário no `index.html`.
 - [ ] Certificações/formação da equipe → adicionar em `sobre.html`.
 - [ ] Política de privacidade (LGPD) → criar página e linkar no footer e no formulário.
+
+## Registro
+
+- O arquivo `Protocolo - 13026.docx` (orçamento com dados pessoais de cliente)
+  subiu junto com as fotos por engano e foi removido do projeto. Ele ainda
+  existe no histórico do git (commit `3268c6f`); se quiser eliminá-lo do
+  histórico também, pedir a limpeza antes de tornar o repositório público.
+- Possível cidade da clínica: Uberlândia – MG (inferida de documento interno).
+  **Confirmar antes de preencher** no hero e no rodapé.
