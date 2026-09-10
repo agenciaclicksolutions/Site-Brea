@@ -19,14 +19,14 @@ que estiver fora da primeira dobra; declarar `width`/`height`.
 
 | Arquivo | Uso | Proporção |
 |---|---|---|
-| `home-hero.webp` | RECEBIDA e aplicada (flat-lay). Para máxima nitidez, enviar versão ≥1600px | 16:10 |
-| `home-espaco.webp` | Home, seção "A clínica" | 4:3, ≥1200px |
-| `sobre-espaco-amplo.webp` | Sobre, faixa larga do espaço | 21:9, ≥1800px |
-| `sobre-bruna.webp` | Sobre, retrato de Bruna Ramos | 4:3, ≥1200px |
-| `trat-harmonizacao.webp` | Tratamentos, frente 01 | 4:3, ≥1200px |
+| `home-hero.webp` | RECEBIDA e aplicada (foto profissional: parede BREA + preparação) | 16:10 |
+| `home-espaco.webp` | APLICADA (flat-lay mármore) | 4:3 |
+| `sobre-espaco-amplo.webp` | APLICADA (parede BREA, recorte panorâmico) | 21:9 |
+| `sobre-bruna.webp` | APLICADA (retrato profissional) | 3:4 |
+| `trat-harmonizacao.webp` | APLICADA (cliente com resultados no tablet) | 4:3 |
 | `trat-corporal.webp` | Tratamentos, frente 02 | 4:3, ≥1200px |
 | `trat-tecnologias.webp` | Tratamentos, frente 03 | 4:3, ≥1200px |
-| `og-image.jpg` | Compartilhamento (Open Graph), todas as páginas | 1200×630 |
+| `og-image.jpg` | APLICADA (parede BREA) | 1200×630 |
 
 ## Resultados (antes/depois — posts do Instagram)
 
