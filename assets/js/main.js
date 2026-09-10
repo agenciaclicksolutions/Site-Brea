@@ -47,6 +47,35 @@
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  /* Fallback de transição entre páginas para navegadores sem
+     View Transitions cross-document (detectadas via pagereveal). */
+  var hasNativeVT = "onpagereveal" in window;
+  if (!hasNativeVT && !reduceMotion) {
+    document.documentElement.classList.add("no-vt");
+    document.addEventListener("click", function (event) {
+      if (event.defaultPrevented || event.button !== 0) return;
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      var link = event.target.closest("a");
+      if (!link || link.target === "_blank" || link.hasAttribute("download")) return;
+      var href = link.getAttribute("href");
+      if (!href || href.charAt(0) === "#") return;
+      var url = new URL(link.href, location.href);
+      if (url.origin !== location.origin) return;
+      if (url.pathname === location.pathname && url.hash) return;
+      event.preventDefault();
+      document.documentElement.classList.add("is-leaving");
+      setTimeout(function () {
+        location.href = link.href;
+      }, 190);
+    });
+    /* Volta do bfcache: garantir página visível */
+    window.addEventListener("pageshow", function (event) {
+      if (event.persisted) {
+        document.documentElement.classList.remove("is-leaving");
+      }
+    });
+  }
+
   /* Luz que segue o cursor (só em ponteiro fino, sem reduced motion) */
   var glow = document.querySelector(".cursor-glow");
   var finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
