@@ -20,8 +20,8 @@ que estiver fora da primeira dobra; declarar `width`/`height`.
 | Arquivo | Uso | Proporção |
 |---|---|---|
 | `home-hero.webp` | RECEBIDA e aplicada (foto profissional: parede BREA + preparação) | 16:10 |
-| `home-espaco.webp` | APLICADA (flat-lay mármore) | 4:3 |
-| `sobre-espaco-amplo.webp` | APLICADA (parede BREA, recorte panorâmico) | 21:9 |
+| `home-espaco.webp` | APLICADA (sala de atendimento) | 4:3 |
+| `sobre-espaco-amplo.webp` | APLICADA (atendimento no consultório, panorâmica) | 21:9 |
 | `sobre-bruna.webp` | APLICADA (retrato profissional) | 3:4 |
 | `trat-harmonizacao.webp` | APLICADA (cliente com resultados no tablet) | 4:3 |
 | `trat-corporal.webp` | Tratamentos, frente 02 | 4:3, ≥1200px |
