@@ -5,8 +5,7 @@ Nada nesta lista foi inventado — o site não deve ir ao ar antes de resolver o
 
 ## Bloqueantes
 
-- [ ] **Número do WhatsApp** — substituir `5500000000000` em TODOS os links `wa.me`
-      (buscar por `5500000000000` no projeto; aparece em todas as páginas).
+- [x] **Número do WhatsApp** — (11) 98820-4035 aplicado em todos os links `wa.me`.
 - [ ] **Domínio definitivo** — o projeto assume `https://www.clinicabrea.com.br/`.
       Ajustar em: `<link rel="canonical">` e metas OG de cada página, `sitemap.xml`, `robots.txt`, JSON-LD do `index.html`.
 - [ ] **Endereço completo e horário de atendimento** — cidade confirmada (São Paulo — SP) e aplicada; faltam rua/número/bairro e horários.
