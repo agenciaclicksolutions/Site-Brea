@@ -1307,7 +1307,7 @@ p {
 }
 .jinsta img {
   width: auto;
-  height: clamp(160px, 26vh, 240px);
+  height: clamp(140px, 21vh, 195px);
   display: block;
   box-shadow: 0 18px 40px rgba(28, 12, 9, 0.35);
   transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
