@@ -1172,7 +1172,7 @@ p {
    reduzido) o palco some e a abertura estática desenhada entra. */
 .jhero {
   position: relative;
-  height: 460vh;
+  height: 1600vh;
 }
 .jstage {
   position: sticky;
@@ -1298,6 +1298,18 @@ p {
   opacity: var(--k, 0);
 }
 
+/* Par de antes e depois dentro da faixa de resultados */
+.jpair {
+  display: flex;
+  gap: 4px;
+  margin-top: 1.1rem;
+}
+.jpair img {
+  width: auto;
+  height: clamp(130px, 22vh, 200px);
+  display: block;
+}
+
 /* Seta de scroll */
 .jcue {
   position: absolute;
@@ -1330,7 +1342,8 @@ p {
 }
 
 /* Abertura estática (celulares, retrato, toque, movimento reduzido) */
-.hero-static {
+.hero-static,
+.gated-sections {
   display: none;
 }
 @media (max-width: 720px),
@@ -1340,6 +1353,7 @@ p {
        (prefers-reduced-motion: reduce) {
   .jhero { display: none; }
   .hero-static { display: block; }
+  .gated-sections { display: block; }
 }
 @media (max-height: 560px) {
   .jcue { display: none; }

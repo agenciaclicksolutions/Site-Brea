@@ -15,12 +15,19 @@
   var layers = Array.prototype.slice.call(stage.querySelectorAll(".jlayer"));
   var bands = Array.prototype.slice.call(stage.querySelectorAll(".jband"));
 
-  /* Faixas de cena: [entra, sai] em progresso 0..1 (fusão nas sobreposições) */
-  var SCENES = [
-    { fadeIn: [0.0, 0.0], fadeOut: [0.30, 0.38], zoom: [1.04, 1.16], drift: [0, -12] },
-    { fadeIn: [0.30, 0.38], fadeOut: [0.60, 0.68], zoom: [1.14, 1.04], drift: [10, 0] },
-    { fadeIn: [0.60, 0.68], fadeOut: [1.01, 1.02], zoom: [1.10, 1.03], drift: [-8, 0] }
-  ];
+  /* Cada camada declara a própria cena: data-in="a,b" data-out="a,b"
+     data-zoom="de,para" data-drift="de,para" (fusão nas sobreposições) */
+  var nums = function (str, fb) {
+    return (str || fb).split(",").map(parseFloat);
+  };
+  layers.forEach(function (l) {
+    l.scene = {
+      fadeIn: nums(l.dataset.in, "-0.01,0"),
+      fadeOut: nums(l.dataset.out, "1.01,1.02"),
+      zoom: nums(l.dataset.zoom, "1.05,1.14"),
+      drift: nums(l.dataset.drift, "0,-10")
+    };
+  });
 
   bands.forEach(function (band) {
     var r = (band.dataset.range || "0,1").split(",");
@@ -106,10 +113,9 @@
   function render(p) {
     if (Math.abs(p - lastJp) > 0.01) { lastJp = p; stage.style.setProperty("--jp", p.toFixed(2)); }
     layers.forEach(function (l, i) {
-      var s = SCENES[i];
-      var op = smoothstep(p, s.fadeIn[0], s.fadeIn[1] || s.fadeIn[0] + 0.001) *
+      var s = l.scene;
+      var op = smoothstep(p, s.fadeIn[0], s.fadeIn[1]) *
                (1 - smoothstep(p, s.fadeOut[0], s.fadeOut[1]));
-      if (i === 0) op = 1 - smoothstep(p, s.fadeOut[0], s.fadeOut[1]);
       var lp = clamp((p - s.fadeIn[0]) / (s.fadeOut[1] - s.fadeIn[0]), 0, 1);
       var scale = s.zoom[0] + (s.zoom[1] - s.zoom[0]) * lp;
       var ty = s.drift[0] + (s.drift[1] - s.drift[0]) * lp;
@@ -120,7 +126,7 @@
 
     bands.forEach(function (band, i) {
       var a = band.range[0], b = band.range[1];
-      var f = Math.min(0.02, (b - a) / 3);
+      var f = Math.min(0.012, (b - a) / 3);
       var op = smoothstep(p, a, a + f) * (1 - smoothstep(p, b - f, b));
       if (i === 0) op = 1 - smoothstep(p, b - f, b);
       if (i === bands.length - 1) op = smoothstep(p, a, a + f);
