@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BREA — Bruna Ramos Estética Avançada</title>
-  <meta name="description" content="Harmonização facial, estética corporal e tecnologias em São Paulo, com avaliação individual. BREA — Bruna Ramos Estética Avançada. Agende pelo WhatsApp.">
+  <title>BREA · Bruna Ramos Estética Avançada</title>
+  <meta name="description" content="Harmonização facial, estética corporal e tecnologias em São Paulo, com avaliação individual. BREA, Bruna Ramos Estética Avançada. Agende pelo WhatsApp.">
   <link rel="canonical" href="https://www.clinicabrea.com.br/"><!-- TODO: confirmar domínio definitivo -->
   <link rel="icon" type="image/png" href="/assets/img/selo.png">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="BREA — Bruna Ramos Estética Avançada">
+  <meta property="og:title" content="BREA · Bruna Ramos Estética Avançada">
   <meta property="og:description" content="Protocolos personalizados, conduzidos com técnica e acompanhamento próximo. Agende sua avaliação.">
   <meta property="og:url" content="https://www.clinicabrea.com.br/">
   <meta property="og:locale" content="pt_BR">
@@ -27,7 +27,7 @@
   {
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
-    "name": "BREA — Bruna Ramos Estética Avançada",
+    "name": "BREA, Bruna Ramos Estética Avançada",
     "alternateName": "Clínica Brea",
     "founder": { "@type": "Person", "name": "Bruna Ramos" },
     "address": { "@type": "PostalAddress", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR" },
@@ -42,7 +42,7 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="/"><img src="/assets/img/logo-horizontal.png" alt="BREA — Bruna Ramos Estética Avançada" width="1161" height="198"></a>
+      <a class="brand" href="/"><img src="/assets/img/logo-horizontal.png" alt="BREA, Bruna Ramos Estética Avançada" width="1161" height="198"></a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
         <span></span><span></span><span></span>
       </button>
@@ -59,12 +59,44 @@
 
   <main id="conteudo">
 
-    <!-- HERO -->
-    <section class="hero">
+    <!-- HERO: jornada de scroll (desktop) + abertura estática (celular / movimento reduzido) -->
+    <section class="jhero" id="jhero" aria-label="Apresentação da BREA">
+      <div class="jstage">
+        <div class="jlayer" data-i="0"><img src="/assets/img/hero-j1.webp" alt="" width="1800" height="1125" fetchpriority="high" aria-hidden="true"></div>
+        <div class="jlayer" data-i="1"><img src="/assets/img/hero-j2.webp" alt="" width="1200" height="750" loading="lazy" aria-hidden="true"></div>
+        <div class="jlayer" data-i="2"><img src="/assets/img/hero-j3.webp" alt="" width="1800" height="1125" loading="lazy" aria-hidden="true"></div>
+        <div class="jscrim" aria-hidden="true"></div>
+        <div class="jgrain" aria-hidden="true"></div>
+
+        <div class="jband" data-range="0,0.30" data-pos="bl">
+          <p class="jkicker">BREA · Estética avançada · São Paulo</p>
+          <h1 class="jtitle" data-split>Estética que começa por ouvir você.</h1>
+        </div>
+
+        <div class="jband" data-range="0.34,0.63" data-pos="ml">
+          <p class="jkicker">Nossa forma de trabalhar</p>
+          <p class="jtitle jblur"><span class="soft" aria-hidden="true">Avaliação individual. Um protocolo seu, e de mais ninguém.</span><span class="sharp">Avaliação individual. Um protocolo seu, e de mais ninguém.</span></p>
+        </div>
+
+        <div class="jband" data-range="0.66,1" data-pos="mr">
+          <p class="jkicker">Quem cuida de você</p>
+          <p class="jtitle" data-split>Conduzida por Bruna Ramos.</p>
+          <p class="jsub">Harmonização facial, estética corporal e tecnologias, sempre a partir de uma avaliação.</p>
+          <div class="jactions">
+            <a class="btn btn-primary" href="https://wa.me/5511988204035?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação <span class="btn-arrow" aria-hidden="true">→</span></a>
+            <a class="link-line" href="/tratamentos.html">Conhecer os tratamentos <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="jcue" aria-hidden="true">Role para entrar</div>
+      </div>
+    </section>
+
+    <section class="hero hero-static">
       <div class="container">
         <p class="hero-meta reveal">
           <span>Estética avançada</span>
-          <span>São Paulo — SP</span>
+          <span>São Paulo, SP</span>
           <span>Por agendamento</span>
         </p>
         <h1 class="t-display hero-title" data-stagger>
@@ -74,7 +106,7 @@
         </h1>
         <div class="hero-row">
           <div class="hero-side" data-stagger>
-            <p class="reveal">Antes de qualquer procedimento, entendemos sua pele, sua rotina e o resultado que você espera. Só então montamos um protocolo — seu, e de mais ninguém.</p>
+            <p class="reveal">Antes de qualquer procedimento, entendemos sua pele, sua rotina e o resultado que você espera. Só então montamos um protocolo seu, e de mais ninguém.</p>
             <div class="actions reveal">
               <a class="btn btn-primary" href="https://wa.me/5511988204035?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação <span class="btn-arrow" aria-hidden="true">→</span></a>
             </div>
@@ -82,7 +114,7 @@
           </div>
           <figure class="hero-media reveal">
             <div class="ph">
-              <img src="/assets/img/home-hero.webp" alt="Profissional da BREA preparando bioestimulador de colágeno diante do logo da clínica" width="1800" height="1125" fetchpriority="high">
+              <img src="/assets/img/home-hero.webp" alt="Profissional da BREA preparando bioestimulador de colágeno diante do logo da clínica" width="1800" height="1125">
             </div>
           </figure>
         </div>
@@ -93,7 +125,7 @@
     <section class="section">
       <div class="container">
         <div class="folio reveal"><span>Nossa forma de trabalhar</span><span class="folio-num">01</span></div>
-        <p class="statement reveal">Não vendemos procedimentos avulsos. Construímos <em>planos de cuidado</em> com começo, meio e acompanhamento — explicados com clareza antes de qualquer decisão.</p>
+        <p class="statement reveal">Não vendemos procedimentos avulsos. Construímos <em>planos de cuidado</em> com começo, meio e acompanhamento, explicados com clareza antes de qualquer decisão.</p>
         <p class="statement-note reveal">A ordem nunca se inverte: primeiro a avaliação, depois a indicação.</p>
       </div>
     </section>
@@ -108,7 +140,7 @@
             <a href="/tratamentos.html#harmonizacao">
               <span class="treatment-num">01</span>
               <span class="treatment-name">Harmonização facial</span>
-              <span class="treatment-desc">Equilíbrio e naturalidade dos traços — bioestimuladores e injetáveis indicados na avaliação.</span>
+              <span class="treatment-desc">Equilíbrio e naturalidade dos traços, com bioestimuladores e injetáveis indicados na avaliação.</span>
               <span class="treatment-cta" aria-hidden="true">→</span>
             </a>
           </li>
@@ -132,7 +164,7 @@
             <a href="/tratamentos.html#protocolos">
               <span class="treatment-num">04</span>
               <span class="treatment-name">Protocolos personalizados</span>
-              <span class="treatment-desc">Técnicas combinadas para o seu objetivo — nunca um pacote de prateleira.</span>
+              <span class="treatment-desc">Técnicas combinadas para o seu objetivo, nunca um pacote de prateleira.</span>
               <span class="treatment-cta" aria-hidden="true">→</span>
             </a>
           </li>
@@ -215,7 +247,7 @@
           </div>
           <div class="overlap-copy" data-stagger>
             <h2 class="t-2 reveal">Um espaço pensado para você chegar, <em>respirar</em> e se cuidar</h2>
-            <p class="muted reveal">A BREA nasceu para oferecer estética avançada com escuta e técnica — em um ambiente onde cada detalhe, do agendamento ao pós-atendimento, respeita o seu tempo.</p>
+            <p class="muted reveal">A BREA nasceu para oferecer estética avançada com escuta e técnica, em um ambiente onde cada detalhe, do agendamento ao pós-atendimento, respeita o seu tempo.</p>
             <a class="link-line reveal" href="/sobre.html">Conhecer a clínica <span aria-hidden="true">→</span></a>
           </div>
         </div>
@@ -223,7 +255,7 @@
     </section>
 
     <!--
-      DEPOIMENTOS (texto) — seção intencionalmente ausente.
+      DEPOIMENTOS (texto), seção intencionalmente ausente.
       A prova social visual está na seção "Resultados". Quando houver
       depoimentos reais autorizados por escrito, criar aqui citações curtas
       (nome ou iniciais + tratamento realizado).
@@ -249,7 +281,7 @@
           <details>
             <summary><span class="faq-num">c.</span>A avaliação me obriga a fechar um tratamento?</summary>
             <div class="faq-body">
-              <p>Não. A avaliação termina com um plano e um orçamento claros — a decisão de seguir é sempre sua, no seu tempo.</p>
+              <p>Não. A avaliação termina com um plano e um orçamento claros, a decisão de seguir é sempre sua, no seu tempo.</p>
             </div>
           </details>
           <details>
@@ -269,7 +301,7 @@
         <div class="cta-grid">
           <h2 class="t-1 reveal">Sua avaliação é <em>o começo</em> de tudo.</h2>
           <div class="cta-side" data-stagger>
-            <p class="muted reveal">Envie uma mensagem e escolha o melhor horário. Sem compromisso — só uma boa conversa sobre o que você quer para você.</p>
+            <p class="muted reveal">Envie uma mensagem e escolha o melhor horário. Sem compromisso, só uma boa conversa sobre o que você quer para você.</p>
             <a class="btn btn-primary reveal" href="https://wa.me/5511988204035?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar pelo WhatsApp <span class="btn-arrow" aria-hidden="true">→</span></a>
             <a class="link-line reveal" href="/contato.html">Outras formas de contato <span aria-hidden="true">→</span></a>
           </div>
@@ -283,8 +315,8 @@
       <div class="footer-mark" aria-hidden="true">Brea</div>
       <div class="footer-grid">
         <div class="footer-brand">
-          <a class="brand" href="/"><img src="/assets/img/logo-horizontal-cream.png" alt="BREA — Bruna Ramos Estética Avançada" width="1161" height="198" loading="lazy"></a>
-          <p>Harmonização facial, estética corporal e tecnologias — com avaliação individual e acompanhamento próximo, por Bruna Ramos.</p>
+          <a class="brand" href="/"><img src="/assets/img/logo-horizontal-cream.png" alt="BREA, Bruna Ramos Estética Avançada" width="1161" height="198" loading="lazy"></a>
+          <p>Harmonização facial, estética corporal e tecnologias, com avaliação individual e acompanhamento próximo, por Bruna Ramos.</p>
         </div>
         <div>
           <h4>Navegação</h4>
@@ -300,18 +332,19 @@
           <ul>
             <li><a href="https://wa.me/5511988204035" target="_blank" rel="noopener">WhatsApp</a></li>
             <li><a href="https://www.instagram.com/clinicabrea/" target="_blank" rel="noopener">Instagram</a></li>
-            <li><span>São Paulo — SP · [endereço completo — preencher]</span></li>
-            <li><span>[Horário de atendimento — preencher]</span></li>
+            <li><span>São Paulo, SP · [endereço completo a preencher]</span></li>
+            <li><span>[Horário de atendimento a preencher]</span></li>
           </ul>
         </div>
       </div>
       <div class="footer-legal">
-        <span>© 2026 BREA — Bruna Ramos Estética Avançada. Todos os direitos reservados.</span>
-        <span>[CNPJ e responsável técnico — preencher]</span>
+        <span>© 2026 BREA · Bruna Ramos Estética Avançada. Todos os direitos reservados.</span>
+        <span>[CNPJ e responsável técnico a preencher]</span>
       </div>
     </div>
   </footer>
 
   <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/journey.js" defer></script>
 </body>
 </html>
