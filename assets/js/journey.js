@@ -34,6 +34,7 @@
     band.range = [parseFloat(r[0]), parseFloat(r[1])];
     band.lastOp = -1;
     band.lastK = -1;
+    band.lastPe = "";
   });
   layers.forEach(function (l) {
     l.lastOp = -1;
@@ -135,6 +136,9 @@
       if (i === 0) k = Math.max(k, loadK);
       if (Math.abs(op - band.lastOp) > 0.004) { band.lastOp = op; band.style.opacity = op.toFixed(3); }
       if (Math.abs(k - band.lastK) > 0.008) { band.lastK = k; band.style.setProperty("--k", k.toFixed(3)); }
+      /* Faixas se sobrepõem no mesmo canto; só a visível recebe clique */
+      var pe = op > 0.15 ? "auto" : "none";
+      if (pe !== band.lastPe) { band.lastPe = pe; band.style.pointerEvents = pe; }
     });
   }
 
@@ -147,11 +151,12 @@
     bands.forEach(function (band, i) {
       band.style.opacity = i === bands.length - 1 ? "1" : "0";
       band.style.setProperty("--k", "1");
+      band.style.pointerEvents = i === bands.length - 1 ? "auto" : "none";
     });
   }
   function unpinFinalStates() {
     layers.forEach(function (l) { l.lastOp = -1; l.lastT = ""; });
-    bands.forEach(function (band) { band.lastOp = -1; band.lastK = -1; });
+    bands.forEach(function (band) { band.lastOp = -1; band.lastK = -1; band.lastPe = ""; });
   }
 
   /* Os cinco portões, idênticos ao CSS, vivos */

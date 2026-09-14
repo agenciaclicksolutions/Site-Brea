@@ -29,7 +29,7 @@ para títulos, Montserrat para texto. Nada muda.
 | 5 Corporal | 0.49 a 0.60 | ja-05-corporal.webp (nova) | "Estética corporal. Metas reais, combinadas com você." + lista curta | deriva para baixo |
 | 6 Tecnologias | 0.62 a 0.72 | ja-06-tecnologia.webp (nova) | "Tecnologias que aceleram e sustentam o resultado." + lista curta | aproximação da profundidade |
 | 7 Produtos | 0.74 a 0.83 | ja-07-produtos.webp (temos: flat-lay, ou nova) | "Bioestimuladores e injetáveis de referência. Indicados só depois da avaliação." | alinhamento em grade |
-| 8 Resultados | 0.85 a 0.94 | os antes e depois que já temos, em par sobre a cena | "Resultados reais, do nosso Instagram." | soco de palavra |
+| 8 No Instagram | 0.85 a 0.94 | foto estilo post, clicável para o perfil | "Os resultados reais estão no Instagram." + Seguir @clinicabrea | soco de palavra |
 | 9 Chegada | 0.96 a 1.00 | ja-03 ou ja-01 em repouso | "Sua avaliação é o começo de tudo." + botão Agendar avaliação | subida em etapas |
 
 Regras de composição: cada foto define onde o texto senta (o lado calmo),
