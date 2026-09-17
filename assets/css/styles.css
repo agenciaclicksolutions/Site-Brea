@@ -1306,7 +1306,23 @@ p {
   color: inherit;
 }
 .jinsta .igcard {
-  width: clamp(220px, 27vh, 280px);
+  width: clamp(185px, 22vh, 225px);
+}
+
+/* Faixa 8, conjunto compacto: título menor e ritmo mais justo */
+.jband-tight {
+  max-width: 26rem;
+}
+.jband-tight .jtitle {
+  font-size: clamp(1.7rem, 2.9vw, 2.75rem);
+  line-height: 1.1;
+}
+.jband-tight .jsub {
+  margin-top: 0.8rem;
+  font-size: clamp(0.85rem, 1vw, 0.95rem);
+}
+.jband-tight .jinsta {
+  margin-top: 1rem;
 }
 
 /* Réplica do feed do Instagram, clicável para o perfil */
