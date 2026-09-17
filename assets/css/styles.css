@@ -1455,19 +1455,106 @@ p {
   100% { transform: scaleY(0); transform-origin: bottom; }
 }
 
-/* Abertura estática (celulares, retrato, toque, movimento reduzido) */
-.hero-static,
-.gated-sections {
+/* Jornada empilhada (celulares, retrato, toque, movimento reduzido):
+   a mesma história do filme, capítulo a capítulo, sem scroll fixado */
+.mjourney {
   display: none;
 }
+.mchapter {
+  position: relative;
+  min-height: 74vh;
+  min-height: 74svh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background: var(--wine-deep);
+}
+.mchapter > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mchapter::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(28, 12, 9, 0.78) 0%,
+    rgba(28, 12, 9, 0.36) 42%,
+    rgba(28, 12, 9, 0.08) 72%,
+    rgba(28, 12, 9, 0.18) 100%
+  );
+}
+.mchapter-hero {
+  min-height: 90vh;
+  min-height: 90svh;
+}
+.mband {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 2.5rem var(--gutter) 2.2rem;
+  color: #F8EFEA;
+  text-shadow: var(--tshadow);
+}
+.mkicker {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--terra-soft);
+  margin-bottom: 0.8rem;
+}
+.mtitle {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.9rem, 7.5vw, 2.9rem);
+  line-height: 1.08;
+  letter-spacing: -0.005em;
+  color: #F8EFEA;
+}
+.msub {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(248, 239, 234, 0.85);
+  max-width: 30em;
+}
+.mactions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  margin-top: 1.4rem;
+}
+.mactions .btn {
+  text-shadow: none;
+}
+.mband .link-line {
+  color: #F8EFEA;
+  border-bottom-color: var(--terra-soft);
+}
+.mband .jinsta {
+  display: block;
+}
+.mband .jinsta .igcard {
+  width: min(280px, 82%);
+  margin-inline: auto;
+}
+.mband .msub:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 720px),
        (orientation: portrait) and (max-width: 1024px),
        (orientation: portrait) and (pointer: coarse),
        (orientation: landscape) and (pointer: coarse) and (max-height: 560px),
        (prefers-reduced-motion: reduce) {
   .jhero { display: none; }
-  .hero-static { display: block; }
-  .gated-sections { display: block; }
+  .mjourney { display: block; }
 }
 @media (max-height: 560px) {
   .jcue { display: none; }
