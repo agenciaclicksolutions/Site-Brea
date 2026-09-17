@@ -1322,7 +1322,11 @@ p {
   font-size: clamp(0.85rem, 1vw, 0.95rem);
 }
 .jband-tight .jinsta {
+  display: block;
   margin-top: 1rem;
+}
+.jband-tight .jinsta .igcard {
+  margin-inline: auto;
 }
 
 /* Réplica do feed do Instagram, clicável para o perfil */
