@@ -1178,6 +1178,7 @@ p {
   position: sticky;
   top: 0;
   height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   background: var(--wine-deep);
 }
@@ -1548,13 +1549,30 @@ p {
   margin-bottom: 0;
 }
 
-@media (max-width: 720px),
-       (orientation: portrait) and (max-width: 1024px),
-       (orientation: portrait) and (pointer: coarse),
-       (orientation: landscape) and (pointer: coarse) and (max-height: 560px),
-       (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
   .jhero { display: none; }
   .mjourney { display: block; }
+}
+
+/* O filme em telas estreitas: legendas na base, largura cheia,
+   jornada um pouco mais curta para o polegar */
+@media (max-width: 720px) {
+  .jhero {
+    height: 1250vh;
+  }
+  .jband[data-pos="bl"],
+  .jband[data-pos="ml"],
+  .jband[data-pos="mr"] {
+    left: 1.25rem;
+    right: 1.25rem;
+    top: auto;
+    bottom: 9vh;
+    transform: none;
+    max-width: none;
+  }
+  .jband-tight .jinsta .igcard {
+    width: min(225px, 68vw);
+  }
 }
 @media (max-height: 560px) {
   .jcue { display: none; }

@@ -159,12 +159,9 @@
     bands.forEach(function (band) { band.lastOp = -1; band.lastK = -1; band.lastPe = ""; });
   }
 
-  /* Os cinco portões, idênticos ao CSS, vivos */
+  /* O portão, idêntico ao CSS, vivo: só movimento reduzido
+     dispensa o filme; celulares recebem o scroll normalmente */
   var GATES = [
-    "(max-width: 720px)",
-    "(orientation: portrait) and (max-width: 1024px)",
-    "(orientation: portrait) and (pointer: coarse)",
-    "(orientation: landscape) and (pointer: coarse) and (max-height: 560px)",
     "(prefers-reduced-motion: reduce)"
   ];
   var scrubOn = false;
